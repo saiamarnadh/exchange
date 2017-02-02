@@ -1,0 +1,28 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<style>
+	label{
+		display: inline-block;
+		width: 150px;
+	}
+	form{
+				margin-top:100px;
+				margin-left:500px;
+				margin-right:500px;
+				background-color: #f4b342;
+				padding:80px;
+			}
+</style>
+</head>
+<body style = "background-color: grey;">
+<form action="/saveAddress" method="post">
+<p><label>Address Type : </label><input type="text" name="addressType" required="required" placeholder="addressType" /></p>
+<p><label>Address Line 1 : </label><input type="text" name="addressLineOne" required="required" placeholder="address_line_1" /></p>
+<p><label>Address Line 2 : </label><input type="text" name="addressLineTwo" placeholder="address_line_2" /></p>
+<p><label>City : </label><input type="text" name="city" required="required" placeholder="city" /></p>
+<p><label>Zipcode: </label><input type="text" name="zipCode" required="required" placeholder="zipCode" /></p>
+<p><label>State : </label><input type="text" name="state" required="required" placeholder="state" /></p>
+<p style = "text-align: center;"><input type = "submit" value = "submit" /></p>
+</form>
+</body>
+</html>
